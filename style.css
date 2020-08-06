@@ -1,0 +1,48 @@
+body {
+    background: linear-gradient(270deg, #a2d919, #d9b319, #19d9d2);
+    background-size: 600% 600%;
+
+    animation: AnimationName 30s ease infinite;
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.bungkus-tombol{
+	position: relative;
+	height: 150px;
+	width: 150px;
+	top: 300px;
+}
+.modal-trigger{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+.card{
+	width: 75px;
+    height: 75px;
+    background: #fafafa;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    transition:1s ease-in-out;
+}
+#modal1{
+	width: 250px;
+	margin-top: 100px;
+	position: relative;
+	overflow: unset;
+}
+
+.modal:hover .card{
+	top:-100px;
+}
