@@ -16,4 +16,9 @@
     	const pass=$('.pass').val();
     	alert('username = '+username+' || '+'password = '+pass);
     })
+    $('.modal-trigger').click(function(){
+    	$('.card').css('animation-play-state','running');
+    	$('.isi').css('animation-play-state','running');
+    	$('.icon-form').css('animation-play-state','running');
+    })
   });
