@@ -87,7 +87,7 @@ body {
 		opacity: 0;
 		/*transition: 1s cubic-bezier(0.38, 0.01, 0.57, 1.44) 2s;*/
 		animation: isi  1s ease-in 1 forwards;
-		animation-delay: 3s;
+		animation-delay: 2s;
 		animation-play-state:paused; 
 	}
 	@keyframes isi{
