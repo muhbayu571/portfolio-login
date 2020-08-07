@@ -68,7 +68,7 @@ body {
 	.icon-form{
 		font-size: 0;
 		/*transition: 1s cubic-bezier(0.38, 0.01, 0.57, 1.44) 1s;*/
-		animation: icon-form  2s cubic-bezier(0.38, 0.01, 0.57, 1.44) 1 forwards;
+		animation: icon-form  1s cubic-bezier(0.38, 0.01, 0.57, 1.44) 1 forwards;
 		animation-delay: 1s;
 		animation-play-state:paused; 
 	}
@@ -86,7 +86,7 @@ body {
 	.isi{
 		opacity: 0;
 		/*transition: 1s cubic-bezier(0.38, 0.01, 0.57, 1.44) 2s;*/
-		animation: isi  2s ease-in 1 forwards;
+		animation: isi  1s ease-in 1 forwards;
 		animation-delay: 3s;
 		animation-play-state:paused; 
 	}
