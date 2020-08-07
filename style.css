@@ -1,13 +1,13 @@
 body {
-    background: linear-gradient(270deg, #a2d919, #d9b319, #19d9d2);
-    background-size: 600% 600%;
-    animation: AnimationName 3s ease infinite;
+	background: linear-gradient(270deg, #a2d919, #d9b319, #19d9d2);
+	background-size: 600% 600%;
+	animation: AnimationName 3s ease infinite;
 }
 
 @keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
 }
 
 .bungkus-tombol{
@@ -25,16 +25,26 @@ body {
 
 .card{
 	width: 75px;
-    height: 75px;
-    background: #fafafa;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 50%;
-    transition:1s cubic-bezier(0.780, -0.005, 0.175, 1.000);
-    margin-bottom: -70px;
+	height: 75px;
+	background: #fafafa;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	border-radius: 50%;
+	/*transition:1s cubic-bezier(0.38, 0.01, 0.57, 1.44);*/
+	animation: card  1s cubic-bezier(0.38, 0.01, 0.57, 1.44) 1 forwards;
+	animation-play-state:paused; 
+	margin-bottom: -70px;
+}
+@keyframes card{
+	from{
+		top: 0;
+	}
+	to{
+		top: -66px;
+	}
 }
 #modal1{
 	width: 300px;
@@ -45,31 +55,53 @@ body {
 .modal,.modal .modal-footer,.modal-action{
 	border-radius: 30px;
 }
-.modal:hover .card{
+/*.modal:hover .card{
 	top:-66px;
-}
-.modal .modal-close{
-	margin-right: 10px !important;
-}
-.modal .modal-footer{
-	height: 62px;
-	margin-top: -43px;
-}
-.icon-form{
-	font-size: 0;
-	transition: 1s cubic-bezier(0.780, -0.005, 0.175, 1.000) 1s;
-}
-.modal:hover .icon-form{
+	}*/
+	.modal .modal-close{
+		margin-right: 10px !important;
+	}
+	.modal .modal-footer{
+		height: 62px;
+		margin-top: -43px;
+	}
+	.icon-form{
+		font-size: 0;
+		/*transition: 1s cubic-bezier(0.38, 0.01, 0.57, 1.44) 1s;*/
+		animation: icon-form  2s cubic-bezier(0.38, 0.01, 0.57, 1.44) 1 forwards;
+		animation-delay: 1s;
+		animation-play-state:paused; 
+	}
+	@keyframes icon-form{
+		from{
+			font-size: 0;
+		}
+		to{
+			font-size: 75px;
+		}
+	}
+/*.modal:hover .icon-form{
 	font-size: 75px;
-}
-.isi{
-	opacity: 0;
-	transition: 1s cubic-bezier(0.780, -0.005, 0.175, 1.000) 2s;
-}
-.modal:hover .isi{
+	}*/
+	.isi{
+		opacity: 0;
+		/*transition: 1s cubic-bezier(0.38, 0.01, 0.57, 1.44) 2s;*/
+		animation: isi  2s ease-in 1 forwards;
+		animation-delay: 3s;
+		animation-play-state:paused; 
+	}
+	@keyframes isi{
+		from{
+			opacity: 0;
+		}
+		to{
+			opacity: 1;
+		}
+	}
+/*.modal:hover .isi{
 	opacity: 1;
-}
-.icon-mata{
-	right: 0;
-	position: absolute;
-}
+	}*/
+	.icon-mata{
+		right: 0;
+		position: absolute;
+	}
