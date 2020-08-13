@@ -34,7 +34,7 @@ body {
 	margin: auto;
 	border-radius: 50%;
 	/*transition:1s cubic-bezier(0.38, 0.01, 0.57, 1.44);*/
-	animation: card  1s cubic-bezier(0.38, 0.01, 0.57, 1.44) 1 forwards;
+	animation: card  .5s cubic-bezier(0.38, 0.01, 0.57, 1.44) 1 forwards;
 	animation-play-state:paused; 
 	margin-bottom: -70px;
 }
@@ -63,21 +63,23 @@ body {
 	}
 	.modal .modal-footer{
 		height: 62px;
-		margin-top: -43px;
+		margin-top: -36px;
+		overflow: hidden;
 	}
 	.icon-form{
-		font-size: 0;
+		font-size: 75px;
+		transform: scale(0);
 		/*transition: 1s cubic-bezier(0.38, 0.01, 0.57, 1.44) 1s;*/
-		animation: icon-form  1s cubic-bezier(0.38, 0.01, 0.57, 1.44) 1 forwards;
-		animation-delay: 1s;
+		animation: icon-form  .5s cubic-bezier(0.38, 0.01, 0.57, 1.44) 1 forwards;
+		animation-delay: .5s;
 		animation-play-state:paused; 
 	}
 	@keyframes icon-form{
 		from{
-			font-size: 0;
+			transform: scale(0);
 		}
 		to{
-			font-size: 75px;
+			transform: scale(1);
 		}
 	}
 /*.modal:hover .icon-form{
@@ -86,8 +88,8 @@ body {
 	.isi{
 		opacity: 0;
 		/*transition: 1s cubic-bezier(0.38, 0.01, 0.57, 1.44) 2s;*/
-		animation: isi  1s ease-in 1 forwards;
-		animation-delay: 2s;
+		animation: isi  .5s ease-in 1 forwards;
+		animation-delay: 1s;
 		animation-play-state:paused; 
 	}
 	@keyframes isi{
@@ -104,4 +106,25 @@ body {
 	.icon-mata{
 		right: 0;
 		position: absolute;
+	}
+	.koreksi-password{
+		position: absolute;
+		left: 76px;
+		bottom: 70px;
+	}
+
+	.modal-action{
+		transform: translateY(100px);
+		animation: tombol  .5s ease-in 1 forwards;
+		animation-delay: 1s;
+		animation-play-state:paused; 
+	}
+
+	@keyframes tombol{
+		from{
+			transform: translateY(100px);
+		}
+		to{
+			transform: translateY(0);
+		}
 	}
