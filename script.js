@@ -12,13 +12,22 @@
     	}
     })
     $('.modal-action').click(function(){
-    	const username=$('.username').val();
+    	const username=$('#email').val();
     	const pass=$('.pass').val();
-    	alert('username = '+username+' || '+'password = '+pass);
-    })
+        var panjang=0;
+        for(let i = 0; i<pass.length;i++){
+            panjang++;
+        }
+        if(panjang < 8){
+            $('.koreksi-password').html(`<p style="font-size: 10px; color: red; font-style: italic;">Password kurang dari 8!!</p>`);
+        }else{
+         alert('username = '+username+' || '+'password = '+pass); 
+     } 
+ })
     $('.modal-trigger').click(function(){
     	$('.card').css('animation-play-state','running');
     	$('.isi').css('animation-play-state','running');
     	$('.icon-form').css('animation-play-state','running');
+        $('.modal-action').css('animation-play-state','running');
     })
-  });
+});
